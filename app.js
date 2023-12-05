@@ -21,13 +21,10 @@ const errorHandler = require("./middleware/errorHandler")
 const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser")
 
-const connectDB = require("./config/dbConn")
-
 const errorHandlerr = require("./middleware/errorMiddleware")
 
 // Connecting to Database Environments
 console.log(chalk.redBright(process.env.NODE_ENV))
-connectDB()
 
 // Middlewares
 app.use(logger)
